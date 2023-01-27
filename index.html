@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Note App</title>
+  </head>
+  <body>
+    <div id="notes">
+      <h2>Notes App</h2>
+      <div class="inputs">
+        <input type="text" id="title" placeholder="Enter note title here:" />
+        <input type="text" id="body" placeholder="Enter note body here:" />
+        <select id="colors">
+          <option>Select Colour</option>
+          <option value="#00aaff">Blue</option>
+          <option value="#ff1a1a">Red</option>
+          <option value="#00aaff">Green</option>
+          <option value="#ffff33">Yellow</option>
+        </select>
+        <button type="button" class="add">Add note</button>
+      </div>
+      <div class="notesDiv">
+        <div class="text">
+          <p class="Note title">Learn React</p>
+          <p class="Note body">Take LinkedIn Learning course sooooon!</p>
+        </div>
+        <br />
+        <button id="edit" type="button" class="add">Edit note</button>
+        <button type="button" class="delete">Delete note</button>
+      </div>
+    </div>
+  </body>
+</html>
