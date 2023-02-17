@@ -2,7 +2,8 @@
   font-family: Helvetica;
 }
 
-.add:hover {
+.add:hover,
+.edit:hover {
   background-color: rgb(0, 0, 158);
   cursor: pointer;
 }
@@ -24,10 +25,9 @@
   margin: auto;
   background-color: rgb(231, 231, 231);
 }
+
 .note {
   margin-top: 16px;
-  display: flex;
-  align-items: flex-start;
 }
 
 .inputs {
@@ -35,11 +35,17 @@
 }
 
 .text {
+  clear: right;
   background: rgb(125, 191, 235);
   padding: 16px;
   border-radius: 4px;
   border: 1px solid black;
   width: calc(100% - 250px);
+  margin-bottom: 10px;
+}
+
+.buttons {
+  clear: both;
 }
 
 input {
@@ -61,7 +67,8 @@ select {
   color: #fff;
 }
 
-.add {
+.add,
+.edit {
   background: #3399ff;
 }
 
@@ -69,7 +76,7 @@ select {
   background: red;
 }
 
-button:not(#edit),
+button:not(.edit),
 select,
 #body {
   margin-left: 8px;
@@ -82,3 +89,5 @@ select {
 #colors {
   color: solid black;
 }
+
+/* make the notes float left and the buttons clear left so the buttons will go below them  */
